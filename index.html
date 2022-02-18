@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>L'Arc en Ciel_Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 id="title">L'Arc en Ciel</h1>
+    <p id="description">Please fill the form, thank you.</p>
+
+    <form id="survey-form">
+      <label for="name" id="name-label">
+        Name
+        <input type="text" id="name" placeholder="Enter your name" required />
+      </label>
+      <label for="email" id="email-label">
+        Email
+        <input type="email" id="email" placeholder="Enter your email" required />
+      </label>
+      <label for="number" id="number-label">
+        Age
+        <input type="number" id="number" placeholder="How old are you?" min="15" max="40" required />
+      </label>
+      <label for="dropdown" id="dropdown-label">
+        How do you know?
+        <select id="dropdown">
+          <option>Test 1</option>
+          <option>Test 2</option>
+        </select>
+      </label>
+      <label for="personil" id="personil-label"> Who is your favorite personil? </label>
+      <input type="radio" name="personil" value="1" checked /> Tetsuya <br />
+      <input type="radio" name="personil" value="2" /> Ken <br />
+      <input type="radio" name="personil" value="3" /> Hyde <br />
+      <input type="radio" name="personil" value="4" /> Yukihiro <br />
+
+      <br /><br />
+      <label for="albums" id="albums-label"> Please choose your favorite albums? </label>
+      <input type="checkbox" value="KISS" /> KISS <br />
+      <input type="checkbox" value="SMILE" /> SMILE <br />
+      <input type="checkbox" value="Awake" /> Awake <br />
+      <input type="checkbox" value="Heart" /> Heart <br />
+
+      <br /><br />
+      <label for="comments" id="comments-label">
+        Any comments or suggestions?
+        <textarea name="comments" id="" cols="30" rows="10"></textarea>
+      </label>
+
+      <button type="submit" id="submit">Submit</button>
+    </form>
+  </body>
+</html>
+
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
